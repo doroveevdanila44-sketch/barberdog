@@ -178,17 +178,11 @@
   }
 }
 
-/* Hero на десктопе: фото уходит в фон слева и мягко под шапку сверху */
+/* Hero на компьютере: фото целиком, без маски */
 @media (min-width: 1024px) {
-  .photo-fade-up.lg\:hero-photo-mask {
-    -webkit-mask-image:
-      linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.45) 15%, #000 42%),
-      linear-gradient(180deg, transparent 0, #000 110px);
-    -webkit-mask-composite: source-in;
-    mask-image:
-      linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.45) 15%, #000 42%),
-      linear-gradient(180deg, transparent 0, #000 110px);
-    mask-composite: intersect;
+  .photo-fade-up.lg\:no-mask {
+    -webkit-mask-image: none;
+    mask-image: none;
   }
 }
 
