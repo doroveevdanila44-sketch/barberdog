@@ -18,7 +18,7 @@ export function Hero() {
   return (
     <section className="bg-cream relative overflow-hidden">
       <Container className="relative z-10">
-        <div className="pt-[92px] pb-2 lg:grid lg:min-h-[780px] lg:grid-cols-2 lg:items-center lg:gap-10 lg:pt-[96px] lg:pb-[72px]">
+        <div className="pt-[92px] pb-2 lg:grid lg:min-h-[760px] lg:grid-cols-2 lg:items-center lg:gap-10 lg:pt-[88px] lg:pb-[40px]">
           <Reveal className="max-w-[540px]">
             <h1 className="text-[32px] leading-[1.14] sm:text-[42px] lg:text-[50px]">
               {hero.title}
@@ -57,7 +57,7 @@ export function Hero() {
       </div>
 
       {/* Планшет и компьютер: широкий кадр, справа на больших экранах */}
-      <div className="photo-fade-up lg:photo-fade-left relative -mt-10 hidden h-[430px] w-full md:block lg:absolute lg:top-[80px] lg:right-0 lg:bottom-0 lg:z-0 lg:mt-0 lg:h-auto lg:w-[58%] xl:w-[56%]">
+      <div className="photo-fade-up lg:photo-fade-left lg:hero-photo-mask relative -mt-10 hidden h-[430px] w-full md:block lg:absolute lg:inset-y-0 lg:right-0 lg:z-0 lg:mt-0 lg:h-auto lg:w-[58%] xl:w-[56%]">
         <Image
           {...imagePropsFill(hero.image)}
           alt={hero.image.alt}
