@@ -50,10 +50,10 @@ export const metadata: Metadata = {
     url: salon.siteUrl,
     images: [
       {
-        url: "/images/hero/hero-cape-wide.jpg",
-        width: 1600,
-        height: 854,
-        alt: salon.tagline,
+        url: "/images/og/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "BarberDog: барбер-грумер для собак и кошек",
       },
     ],
   },
@@ -61,6 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: homeSeo.title,
     description: homeSeo.description,
+    images: ["/images/og/og.jpg"],
   },
   robots: {
     index: true,

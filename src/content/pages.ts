@@ -73,8 +73,8 @@ export const worksPageSeo = {
 };
 
 export const homeSeo = {
-  title: `${salon.name} — зоосалон в Петропавловске-Камчатском`,
-  description: salon.description,
+  title: `${salon.name} — барбер-грумер для собак и кошек в Петропавловске-Камчатском`,
+  description: `Стрижка, мытьё и экспресс-линька для собак и кошек. ${salon.address.street}, запись по телефону ${salon.phone.display}.`,
 };
 
 export const notFoundPage = {
