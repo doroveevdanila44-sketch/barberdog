@@ -1,0 +1,254 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   Дизайн-токены груминг-салона BarberDog
+   ------------------------------------------------------------------ */
+@theme {
+  --color-brand: #c8242b;
+  --color-brand-dark: #a11a21;
+  --color-brand-soft: #f7e9d6;
+  --color-cream: #f6efe3;
+  --color-ink: #111a2b;
+  --color-muted: #6b7080;
+  --color-line: #e8dfcf;
+
+  --font-display: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+
+  /* Барбершоп: скругления сдержаннее */
+  --radius-card: 14px;
+  --radius-card-lg: 18px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 12px 30px -16px rgb(17 26 43 / 0.22);
+  --shadow-card-hover: 0 26px 50px -20px rgb(17 26 43 / 0.38);
+  --shadow-brand: 0 14px 28px -12px rgb(200 36 43 / 0.5);
+  --shadow-header: 0 8px 24px -18px rgb(17 26 43 / 0.5);
+
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* высота уменьшённой шапки — чтобы якоря не уезжали под неё */
+    scroll-padding-top: 84px;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background-color: var(--color-brand-soft);
+    color: var(--color-ink);
+  }
+
+  /* Видимый фокус с клавиатуры */
+  :focus-visible {
+    outline: 3px solid var(--color-brand);
+    outline-offset: 3px;
+    border-radius: 8px;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Наведение и нажатие.
+   Правила задаём вручную, а не через hover:-варианты Tailwind, чтобы
+   на тач-устройствах тот же эффект срабатывал при проведении пальцем:
+   TouchHover расставляет data-touch-active на элементе под пальцем.
+   ------------------------------------------------------------------ */
+@utility lift {
+  transition:
+    transform 0.4s var(--ease-soft),
+    box-shadow 0.4s var(--ease-soft);
+  will-change: transform;
+}
+
+@utility zoom-inner {
+  transition: transform 0.55s var(--ease-soft);
+  will-change: transform;
+}
+
+/* Карточка растёт целиком — вместе с фотографией внутри */
+@media (hover: hover) {
+  .lift:hover,
+  .lift:focus-within {
+    transform: scale(1.03);
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  .lift:hover .zoom-inner,
+  .lift:focus-within .zoom-inner {
+    transform: scale(1.05);
+  }
+}
+
+.lift[data-touch-active] {
+  transform: scale(1.03);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.lift[data-touch-active] .zoom-inner {
+  transform: scale(1.05);
+}
+
+/* Кнопки: только увеличиваются — ни уменьшения, ни затемнения */
+@utility btn-motion {
+  transition:
+    transform 0.25s var(--ease-soft),
+    box-shadow 0.25s var(--ease-soft),
+    background-color 0.25s var(--ease-soft);
+  will-change: transform;
+}
+
+@media (hover: hover) {
+  .btn-motion:hover {
+    transform: scale(1.045);
+  }
+}
+
+.btn-motion:focus-visible {
+  transform: scale(1.045);
+}
+
+.btn-motion:active,
+.btn-motion[data-touch-active] {
+  transform: scale(1.07);
+}
+
+/* ------------------------------------------------------------------
+   Растворение фотографии в фоне секции.
+   Именно маска, а не полупрозрачная плашка сверху: фото уходит
+   в собственный цвет фона секции, поэтому стыка не видно.
+   ------------------------------------------------------------------ */
+.photo-fade-up {
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.5) 20%,
+    #000 52%
+  );
+  mask-image: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.5) 20%,
+    #000 52%
+  );
+}
+
+@media (min-width: 1024px) {
+  .photo-fade-up.lg\:photo-fade-left {
+    -webkit-mask-image: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(0, 0, 0, 0.45) 15%,
+      #000 42%
+    );
+    mask-image: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(0, 0, 0, 0.45) 15%,
+      #000 42%
+    );
+  }
+}
+
+@media (min-width: 768px) {
+  .photo-fade-up.md\:photo-fade-left {
+    -webkit-mask-image: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(0, 0, 0, 0.45) 14%,
+      #000 40%
+    );
+    mask-image: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(0, 0, 0, 0.45) 14%,
+      #000 40%
+    );
+  }
+}
+
+/* ------------------------------------------------------------------
+   Плавное появление при скролле
+   ------------------------------------------------------------------ */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 0.75s var(--ease-soft),
+    transform 0.75s var(--ease-soft);
+}
+
+.reveal[data-visible="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+/* ------------------------------------------------------------------
+   Уважаем prefers-reduced-motion
+   ------------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .lift:hover,
+  .lift:focus-within,
+  .lift[data-touch-active],
+  .lift:hover .zoom-inner,
+  .lift[data-touch-active] .zoom-inner,
+  .btn-motion:hover,
+  .btn-motion:active,
+  .btn-motion:focus-visible,
+  .btn-motion[data-touch-active] {
+    transform: none !important;
+  }
+}
+
+/* Горизонтальные ленты (карусель отзывов) без видимой полосы прокрутки */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
