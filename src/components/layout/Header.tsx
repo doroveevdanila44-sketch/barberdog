@@ -57,8 +57,8 @@ export function Header() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-[background-color,box-shadow,backdrop-filter] duration-300 ${
         scrolled || menuOpen
-          ? "shadow-header bg-white/92 backdrop-blur-md"
-          : "bg-transparent"
+          ? "shadow-header bg-ink/92 backdrop-blur-md"
+          : "bg-ink"
       }`}
     >
       <Container>
@@ -68,6 +68,7 @@ export function Header() {
           }`}
         >
           <Logo
+            tone="light"
             markClassName={`w-auto transition-[height] duration-300 ${
               scrolled ? "h-9 sm:h-10" : "h-10 sm:h-12"
             }`}
@@ -84,7 +85,7 @@ export function Header() {
                     className={`btn-motion rounded-pill inline-block px-1 py-1 text-[15px] font-medium transition-colors ${
                       isActive(link.href)
                         ? "text-brand"
-                        : "text-ink hover:text-brand"
+                        : "hover:text-brand text-white"
                     }`}
                   >
                     {link.label}
@@ -111,7 +112,7 @@ export function Header() {
               href={salon.phone.href}
               data-touch-hover=""
               aria-label={`Позвонить: ${salon.phone.display}`}
-              className="btn-motion rounded-pill border-line text-ink flex h-10 w-10 shrink-0 items-center justify-center border bg-white"
+              className="btn-motion rounded-pill flex h-10 w-10 shrink-0 items-center justify-center border border-white/20 bg-white/5 text-white"
             >
               <IconPhone className="h-[18px] w-[18px]" />
             </a>
@@ -122,7 +123,7 @@ export function Header() {
               aria-expanded={menuOpen}
               aria-controls="mobile-menu"
               aria-label={menuOpen ? "Закрыть меню" : "Открыть меню"}
-              className="btn-motion rounded-pill border-line text-ink flex h-10 w-10 shrink-0 items-center justify-center border bg-white lg:hidden"
+              className="btn-motion rounded-pill flex h-10 w-10 shrink-0 items-center justify-center border border-white/20 bg-white/5 text-white lg:hidden"
             >
               {menuOpen ? (
                 <IconClose className="h-5 w-5" />
@@ -138,7 +139,7 @@ export function Header() {
       <div
         id="mobile-menu"
         hidden={!menuOpen}
-        className="border-line border-t bg-white lg:hidden"
+        className="bg-ink border-t border-white/10 lg:hidden"
       >
         <Container className="py-6">
           <nav aria-label="Мобильное меню">
@@ -150,8 +151,8 @@ export function Header() {
                     aria-current={isActive(link.href) ? "page" : undefined}
                     className={`font-display block rounded-2xl px-4 py-3 text-lg font-medium ${
                       isActive(link.href)
-                        ? "bg-brand-soft text-blue"
-                        : "text-ink"
+                        ? "text-brand bg-white/10"
+                        : "text-white"
                     }`}
                   >
                     {link.label}
@@ -171,7 +172,7 @@ export function Header() {
             </ButtonLink>
             <a
               href={salon.phone.href}
-              className="font-display text-ink text-center text-lg font-semibold"
+              className="font-display text-center text-lg font-semibold text-white"
             >
               {salon.phone.display}
             </a>

@@ -16,15 +16,15 @@ import { imagePropsFill } from "@/lib/image";
  */
 export function Hero() {
   return (
-    <section className="bg-cream relative overflow-hidden">
+    <section className="bg-ink relative overflow-hidden">
       <Container className="relative z-10">
         <div className="pt-[92px] pb-2 lg:grid lg:min-h-[760px] lg:grid-cols-2 lg:items-center lg:gap-10 lg:pt-[88px] lg:pb-[40px]">
           <Reveal className="max-w-[540px]">
-            <h1 className="text-[32px] leading-[1.14] sm:text-[42px] lg:text-[50px]">
+            <h1 className="text-[32px] leading-[1.14] text-white sm:text-[42px] lg:text-[50px]">
               {hero.title}
             </h1>
 
-            <p className="text-muted mt-5 max-w-[430px] text-[16px] leading-relaxed sm:text-[17px]">
+            <p className="mt-5 max-w-[430px] text-[16px] leading-relaxed text-white/75 sm:text-[17px]">
               {hero.subtitle}
             </p>
 
@@ -33,10 +33,10 @@ export function Hero() {
             </div>
 
             <div className="mt-7 flex items-center gap-3">
-              <span className="text-blue shrink-0">
+              <span className="text-brand shrink-0">
                 <IconHeart className="h-9 w-9" />
               </span>
-              <p className="text-ink max-w-[230px] text-sm leading-snug">
+              <p className="max-w-[230px] text-sm leading-snug text-white">
                 {hero.badge}
               </p>
             </div>

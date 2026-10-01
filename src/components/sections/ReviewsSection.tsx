@@ -8,7 +8,7 @@ import { salon } from "@/content/salon";
 
 export function ReviewsSection() {
   return (
-    <section id="otzyvy" className="bg-white pb-16 lg:pb-20">
+    <section id="otzyvy" className="bg-white pt-16 pb-16 lg:pt-24 lg:pb-20">
       <Container>
         <Reveal>
           <SectionHeading title={sections.reviews.title} />
