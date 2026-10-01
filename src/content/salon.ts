@@ -80,7 +80,7 @@ export const salon = {
 
   /** Домен подставляется на Vercel; локально — плейсхолдер. */
   siteUrl: (
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://barberdog.vercel.app"
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://barberdog4141.vercel.app"
   ).replace(/\/$/, ""),
 } as const;
 
