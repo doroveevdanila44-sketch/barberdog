@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     url: salon.siteUrl,
     images: [
       {
-        url: "/images/hero/hero-wide.jpg",
+        url: "/images/hero/hero-cape-wide.jpg",
         width: 1600,
         height: 854,
         alt: salon.tagline,
