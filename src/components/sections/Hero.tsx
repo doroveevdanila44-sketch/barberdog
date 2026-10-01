@@ -18,7 +18,7 @@ export function Hero() {
   return (
     <section className="bg-ink relative overflow-hidden">
       <Container className="relative z-10">
-        <div className="pt-[92px] pb-2 lg:grid lg:min-h-[calc(70px+53.4vw)] lg:grid-cols-2 lg:items-center lg:gap-10 lg:pt-[70px] lg:pb-0">
+        <div className="pt-[92px] pb-2 lg:grid lg:min-h-[53.4vw] lg:grid-cols-2 lg:items-center lg:gap-10 lg:pt-[70px] lg:pb-0">
           <Reveal className="max-w-[540px]">
             <h1 className="text-[32px] leading-[1.14] text-white sm:text-[42px] lg:text-[50px]">
               {hero.title}
@@ -57,8 +57,8 @@ export function Hero() {
       </div>
 
       {/* Планшет: широкий кадр под текстом. Компьютер: кадр целиком на всю
-          ширину под шапкой, без обрезки; затемнение только за текстом слева */}
-      <div className="photo-fade-up lg:no-mask relative -mt-10 hidden h-[430px] w-full md:block lg:absolute lg:inset-x-0 lg:top-[70px] lg:bottom-0 lg:z-0 lg:mt-0 lg:h-auto">
+          ширину, полупрозрачная шапка поверх, без обрезки; затемнение только за текстом слева */}
+      <div className="photo-fade-up lg:no-mask relative -mt-10 hidden h-[430px] w-full md:block lg:absolute lg:inset-x-0 lg:top-0 lg:bottom-0 lg:z-0 lg:mt-0 lg:h-auto">
         <Image
           {...imagePropsFill(hero.image)}
           alt={hero.image.alt}
@@ -72,7 +72,7 @@ export function Hero() {
           className="absolute inset-0 hidden lg:block"
           style={{
             background:
-              "linear-gradient(90deg, rgb(17 19 23 / 0.78) 0%, rgb(17 19 23 / 0.55) 24%, rgb(17 19 23 / 0) 44%)",
+              "linear-gradient(180deg, rgb(17 19 23 / 0.55) 0, rgb(17 19 23 / 0) 150px), linear-gradient(90deg, rgb(17 19 23 / 0.78) 0%, rgb(17 19 23 / 0.55) 24%, rgb(17 19 23 / 0) 44%)",
           }}
         />
       </div>

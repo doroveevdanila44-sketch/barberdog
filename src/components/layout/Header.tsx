@@ -57,8 +57,10 @@ export function Header() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-[background-color,box-shadow,backdrop-filter] duration-300 ${
         scrolled || menuOpen
-          ? "shadow-header bg-ink/92 backdrop-blur-md"
-          : "bg-ink"
+          ? "shadow-header bg-ink/80 backdrop-blur-md"
+          : pathname === "/"
+            ? "bg-ink/25"
+            : "bg-ink"
       }`}
     >
       <Container>
