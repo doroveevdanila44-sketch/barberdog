@@ -8,12 +8,12 @@ import { aspectRatio, imagePropsFill } from "@/lib/image";
 
 export function CareSection() {
   return (
-    <section className="bg-white pb-14 sm:pb-16 lg:pb-20">
+    <section className="bg-ink py-14 sm:py-16 lg:py-20">
       <Container>
         <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-14">
           <Reveal>
             <div
-              className="shadow-card relative w-full overflow-hidden rounded-[var(--radius-card-lg)]"
+              className="relative w-full overflow-hidden rounded-[var(--radius-card-lg)]"
               style={{ aspectRatio: aspectRatio(care.image) }}
             >
               <Image
@@ -27,7 +27,7 @@ export function CareSection() {
           </Reveal>
 
           <Reveal delay={100}>
-            <h2 className="text-[26px] leading-[1.2] sm:text-[32px] lg:text-[36px]">
+            <h2 className="text-[26px] leading-[1.2] text-white sm:text-[32px] lg:text-[36px]">
               {care.title}
             </h2>
             <PawDivider align="left" className="mt-4" />
@@ -35,7 +35,7 @@ export function CareSection() {
             {care.text.map((paragraph) => (
               <p
                 key={paragraph}
-                className="text-muted mt-5 max-w-[520px] text-[15px] leading-relaxed sm:text-base"
+                className="mt-5 max-w-[520px] text-[15px] leading-relaxed text-white/75 sm:text-base"
               >
                 {paragraph}
               </p>
@@ -46,13 +46,13 @@ export function CareSection() {
                 <li
                   key={feature.id}
                   className={`flex flex-col items-center px-2 text-center sm:px-3 ${
-                    index > 0 ? "sm:border-line sm:border-l" : ""
+                    index > 0 ? "sm:border-l sm:border-white/15" : ""
                   }`}
                 >
-                  <span className="text-blue">
+                  <span className="text-brand">
                     <Icon name={feature.icon} className="h-9 w-9" />
                   </span>
-                  <span className="text-ink mt-3 text-[13px] leading-snug">
+                  <span className="mt-3 text-[13px] leading-snug text-white">
                     {feature.title}
                   </span>
                 </li>
