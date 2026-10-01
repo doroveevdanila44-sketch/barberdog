@@ -33,7 +33,7 @@ export function Hero() {
             </div>
 
             <div className="mt-7 flex items-center gap-3">
-              <span className="text-brand shrink-0">
+              <span className="text-blue shrink-0">
                 <IconHeart className="h-9 w-9" />
               </span>
               <p className="text-ink max-w-[230px] text-sm leading-snug">

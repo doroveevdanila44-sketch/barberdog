@@ -34,7 +34,7 @@ export function ServiceCard({
       </div>
 
       <div className="relative -mt-9 flex flex-1 flex-col rounded-t-[var(--radius-card)] bg-white px-5 pt-9 pb-6">
-        <span className="rounded-pill border-brand/30 text-brand absolute -top-6 left-5 flex h-12 w-12 items-center justify-center border bg-white shadow-[0_8px_18px_-12px_rgba(200,36,43,0.9)]">
+        <span className="rounded-pill border-blue/30 text-blue absolute -top-6 left-5 flex h-12 w-12 items-center justify-center border bg-white shadow-[0_8px_18px_-12px_rgba(214,45,85,0.9)]">
           <Icon name={service.icon} className="h-6 w-6" />
         </span>
 

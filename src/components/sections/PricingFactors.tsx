@@ -31,7 +31,7 @@ export function PricingFactors({
           {pricingFactors.items.map((item, index) => (
             <Reveal as="li" key={item.id} delay={index * 80} className="h-full">
               <div className="shadow-card flex h-full flex-col rounded-[var(--radius-card-lg)] bg-white p-6">
-                <span className="rounded-pill bg-brand-soft text-brand flex h-12 w-12 items-center justify-center">
+                <span className="rounded-pill bg-brand-soft text-blue flex h-12 w-12 items-center justify-center">
                   <Icon name={item.icon} className="h-6 w-6" />
                 </span>
                 <h3 className="font-display text-ink mt-4 text-[17px] font-bold">

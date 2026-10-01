@@ -8,7 +8,7 @@ export default function NotFound() {
     <section className="bg-cream pt-[140px] pb-20 lg:pt-[180px]">
       <Container>
         <div className="mx-auto max-w-xl text-center">
-          <span className="rounded-pill text-brand mx-auto flex h-16 w-16 items-center justify-center bg-white">
+          <span className="rounded-pill text-blue mx-auto flex h-16 w-16 items-center justify-center bg-white">
             <IconPawSolid className="h-8 w-8" />
           </span>
           <h1 className="mt-6 text-[32px] sm:text-[40px]">

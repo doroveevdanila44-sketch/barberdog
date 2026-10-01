@@ -39,10 +39,10 @@ export function BeforeAfterCard({
           className="absolute inset-y-0 left-1/2 w-px -translate-x-1/2 bg-white/70"
         />
 
-        <span className="rounded-pill text-ink absolute top-3 left-3 bg-white/95 px-3 py-1 text-xs font-medium shadow-[0_4px_10px_-6px_rgba(17,26,43,0.6)]">
+        <span className="rounded-pill text-ink absolute top-3 left-3 bg-white/95 px-3 py-1 text-xs font-medium shadow-[0_4px_10px_-6px_rgba(20,35,63,0.5)]">
           {beforeAfterLabels.before}
         </span>
-        <span className="rounded-pill bg-brand absolute top-3 right-3 px-3 py-1 text-xs font-medium text-white shadow-[0_4px_10px_-6px_rgba(200,36,43,0.9)]">
+        <span className="rounded-pill bg-brand absolute top-3 right-3 px-3 py-1 text-xs font-medium text-white shadow-[0_4px_10px_-6px_rgba(214,45,85,0.9)]">
           {beforeAfterLabels.after}
         </span>
       </div>

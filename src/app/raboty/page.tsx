@@ -29,7 +29,7 @@ export default function WorksPage() {
         <Container>
           <Reveal>
             <div className="bg-brand-soft mx-auto max-w-2xl rounded-[var(--radius-card-lg)] px-6 py-12 text-center sm:px-10">
-              <span className="rounded-pill text-brand mx-auto flex h-16 w-16 items-center justify-center bg-white">
+              <span className="rounded-pill text-blue mx-auto flex h-16 w-16 items-center justify-center bg-white">
                 <IconPawSolid className="h-8 w-8" />
               </span>
               <h2 className="font-display text-ink mt-6 text-[24px] font-bold sm:text-[28px]">

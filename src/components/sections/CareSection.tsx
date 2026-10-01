@@ -49,7 +49,7 @@ export function CareSection() {
                     index > 0 ? "sm:border-line sm:border-l" : ""
                   }`}
                 >
-                  <span className="text-brand">
+                  <span className="text-blue">
                     <Icon name={feature.icon} className="h-9 w-9" />
                   </span>
                   <span className="text-ink mt-3 text-[13px] leading-snug">

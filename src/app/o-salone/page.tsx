@@ -86,7 +86,7 @@ export default function AboutPage() {
                     key={fact.title}
                     className="bg-cream flex items-start gap-3 rounded-[var(--radius-card)] p-4"
                   >
-                    <span className="rounded-pill text-brand flex h-10 w-10 shrink-0 items-center justify-center bg-white">
+                    <span className="rounded-pill text-blue flex h-10 w-10 shrink-0 items-center justify-center bg-white">
                       {fact.icon}
                     </span>
                     <span className="leading-snug">

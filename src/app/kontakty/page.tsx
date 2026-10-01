@@ -46,7 +46,7 @@ export default function ContactsPage() {
           <div className="grid gap-5 lg:grid-cols-3 lg:gap-6">
             <Reveal>
               <div className="bg-cream h-full rounded-[var(--radius-card-lg)] p-6 sm:p-7">
-                <span className="rounded-pill text-brand flex h-12 w-12 items-center justify-center bg-white">
+                <span className="rounded-pill text-blue flex h-12 w-12 items-center justify-center bg-white">
                   <IconPhone className="h-6 w-6" />
                 </span>
                 <h2 className="font-display text-ink mt-4 text-[19px] font-bold">
@@ -84,7 +84,7 @@ export default function ContactsPage() {
 
             <Reveal delay={90}>
               <div className="bg-cream h-full rounded-[var(--radius-card-lg)] p-6 sm:p-7">
-                <span className="rounded-pill text-brand flex h-12 w-12 items-center justify-center bg-white">
+                <span className="rounded-pill text-blue flex h-12 w-12 items-center justify-center bg-white">
                   <IconPin className="h-6 w-6" />
                 </span>
                 <h2 className="font-display text-ink mt-4 text-[19px] font-bold">
@@ -113,7 +113,7 @@ export default function ContactsPage() {
 
             <Reveal delay={180}>
               <div className="bg-cream h-full rounded-[var(--radius-card-lg)] p-6 sm:p-7">
-                <span className="rounded-pill text-brand flex h-12 w-12 items-center justify-center bg-white">
+                <span className="rounded-pill text-blue flex h-12 w-12 items-center justify-center bg-white">
                   <IconClock className="h-6 w-6" />
                 </span>
                 <h2 className="font-display text-ink mt-4 text-[19px] font-bold">

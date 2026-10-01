@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Montserrat, Open_Sans } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -9,17 +9,17 @@ import { localBusinessJsonLd } from "@/lib/jsonld";
 import { salon } from "@/content/salon";
 import { homeSeo } from "@/content/pages";
 
-const playfair = Playfair_Display({
+const montserrat = Montserrat({
   subsets: ["cyrillic", "latin"],
-  weight: ["500", "600", "700"],
-  variable: "--font-playfair",
+  weight: ["500", "600", "700", "800"],
+  variable: "--font-montserrat",
   display: "swap",
 });
 
-const inter = Inter({
+const openSans = Open_Sans({
   subsets: ["cyrillic", "latin"],
   weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-inter",
+  variable: "--font-open-sans",
   display: "swap",
 });
 
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#111a2b",
+  themeColor: "#d62d55",
   colorScheme: "light",
 };
 
@@ -77,7 +77,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="ru" className={`${playfair.variable} ${inter.variable}`}>
+    <html lang="ru" className={`${montserrat.variable} ${openSans.variable}`}>
       <head>
         {/* Без JS анимация появления не отработает — показываем всё сразу */}
         <noscript>

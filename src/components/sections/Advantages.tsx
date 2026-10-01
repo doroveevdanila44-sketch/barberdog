@@ -17,7 +17,7 @@ export function Advantages() {
                 index > 0 ? "md:border-line md:border-l" : ""
               }`}
             >
-              <span className="text-brand">
+              <span className="text-blue">
                 <Icon name={item.icon} className="h-11 w-11" />
               </span>
               <h3 className="font-display text-ink mt-4 text-[19px] font-bold">
