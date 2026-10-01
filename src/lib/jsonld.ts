@@ -15,7 +15,7 @@ export function localBusinessJsonLd() {
     description: salon.description,
     url: salon.siteUrl,
     telephone: salon.phone.raw,
-    image: `${salon.siteUrl}/images/hero/hero.jpg`,
+    image: `${salon.siteUrl}/images/hero/hero-wide.jpg`,
     logo: `${salon.siteUrl}/images/logo/logo.png`,
     priceRange: "₽₽",
     currenciesAccepted: "RUB",

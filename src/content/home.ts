@@ -13,11 +13,11 @@ export const hero: {
     "Профессиональный уход за собаками и кошками любой породы в Петропавловске-Камчатском.",
   badge: "Более 10 лет заботимся о питомцах Камчатки",
   image: {
-    src: "/images/hero/hero.jpg",
+    src: "/images/hero/hero-wide.jpg",
     alt: "Персиковый пудель в барберской накидке в кресле зоосалона BarberDog",
   },
   imageMobile: {
-    src: "/images/hero/hero-mobile.jpg",
+    src: "/images/hero/hero-phone.jpg",
     alt: "Персиковый пудель в барберской накидке в кресле зоосалона BarberDog",
   },
 };
