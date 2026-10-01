@@ -150,7 +150,7 @@ export function Header() {
                     aria-current={isActive(link.href) ? "page" : undefined}
                     className={`font-display block rounded-2xl px-4 py-3 text-lg font-medium ${
                       isActive(link.href)
-                        ? "bg-brand-soft text-brand"
+                        ? "bg-brand-soft text-blue"
                         : "text-ink"
                     }`}
                   >

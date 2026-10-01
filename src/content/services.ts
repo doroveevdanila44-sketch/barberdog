@@ -44,7 +44,7 @@ export const services: Service[] = [
     icon: "scissors",
     image: {
       src: "/images/services/1.jpg",
-      alt: "Йоркширский терьер с розовым бантом после стрижки в зоосалоне BarberDog",
+      alt: "Йоркширский терьер с бантом после стрижки в зоосалоне BarberDog",
     },
     priceFrom: "от 2 500 ₽",
     intro: [
@@ -86,7 +86,7 @@ export const services: Service[] = [
     icon: "comb",
     image: {
       src: "/images/services/2.jpg",
-      alt: "Пушистая кошка колор-пойнт на груминг-столе зоосалона",
+      alt: "Пушистая кошка колор-пойнт на груминг-столе зоосалона BarberDog",
     },
     priceFrom: "от 3 000 ₽",
     intro: [

@@ -4,14 +4,15 @@
    Дизайн-токены груминг-салона BarberDog
    ------------------------------------------------------------------ */
 @theme {
-  --color-brand: #d62d55;
-  --color-blue: #2456c7;
-  --color-brand-dark: #b8213f;
-  --color-brand-soft: #fce6ea;
-  --color-cream: #fbf4f1;
-  --color-ink: #14233f;
-  --color-muted: #5f6b82;
-  --color-line: #ebe3e6;
+  /* Цвета барберского жезла: красный, синий, белый и чёрный */
+  --color-brand: #d8232f;
+  --color-blue: #1f4fb0;
+  --color-brand-dark: #b81b26;
+  --color-brand-soft: #e8eefb;
+  --color-cream: #f6f8fc;
+  --color-ink: #111317;
+  --color-muted: #5a6272;
+  --color-line: #e3e7ef;
 
   --font-display: var(--font-montserrat), system-ui, sans-serif;
   --font-sans: var(--font-open-sans), system-ui, -apple-system, sans-serif;
@@ -21,10 +22,10 @@
   --radius-card-lg: 18px;
   --radius-pill: 999px;
 
-  --shadow-card: 0 12px 30px -16px rgb(20 35 63 / 0.2);
-  --shadow-card-hover: 0 26px 50px -20px rgb(214 45 85 / 0.3);
-  --shadow-brand: 0 14px 28px -12px rgb(214 45 85 / 0.5);
-  --shadow-header: 0 8px 24px -18px rgb(20 35 63 / 0.45);
+  --shadow-card: 0 12px 30px -16px rgb(17 19 23 / 0.2);
+  --shadow-card-hover: 0 26px 50px -20px rgb(31 79 176 / 0.3);
+  --shadow-brand: 0 14px 28px -12px rgb(216 35 47 / 0.5);
+  --shadow-header: 0 8px 24px -18px rgb(17 19 23 / 0.45);
 
   --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
 }

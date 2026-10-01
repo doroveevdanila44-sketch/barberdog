@@ -58,7 +58,8 @@ export const reviewsPage = {
 export const contactsPage = {
   title: "Контакты",
   lead: "Записаться можно по телефону, в WhatsApp или Max — все на одном номере.",
-  addressNote: "Вход со стороны двора, ищите вывеску с розовой лапкой.",
+  addressNote:
+    "Вход со стороны двора, ищите вывеску с красно-сине-белым барберским жезлом.",
   seo: {
     title: "Контакты",
     description: `Зоосалон BarberDog: ${salon.address.full}. Ежедневно ${salon.hours.time}, по предварительной записи. Телефон ${salon.phone.display}.`,

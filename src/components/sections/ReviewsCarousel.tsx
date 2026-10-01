@@ -62,7 +62,7 @@ export function ReviewsCarousel({ reviews }: { reviews: Review[] }) {
           disabled={clampedActive === 0}
           aria-label="Предыдущие отзывы"
           data-touch-hover=""
-          className="btn-motion rounded-pill bg-brand shadow-brand absolute top-1/2 left-0 z-10 hidden h-11 w-11 -translate-y-1/2 items-center justify-center text-white disabled:pointer-events-none disabled:opacity-35 lg:flex"
+          className="btn-motion rounded-pill bg-blue shadow-card absolute top-1/2 left-0 z-10 hidden h-11 w-11 -translate-y-1/2 items-center justify-center text-white disabled:pointer-events-none disabled:opacity-35 lg:flex"
         >
           <IconChevronLeft className="h-5 w-5" />
         </button>
@@ -89,7 +89,7 @@ export function ReviewsCarousel({ reviews }: { reviews: Review[] }) {
           disabled={clampedActive >= pages - 1}
           aria-label="Следующие отзывы"
           data-touch-hover=""
-          className="btn-motion rounded-pill bg-brand shadow-brand absolute top-1/2 right-0 z-10 hidden h-11 w-11 -translate-y-1/2 items-center justify-center text-white disabled:pointer-events-none disabled:opacity-35 lg:flex"
+          className="btn-motion rounded-pill bg-blue shadow-card absolute top-1/2 right-0 z-10 hidden h-11 w-11 -translate-y-1/2 items-center justify-center text-white disabled:pointer-events-none disabled:opacity-35 lg:flex"
         >
           <IconChevronRight className="h-5 w-5" />
         </button>
@@ -107,7 +107,7 @@ export function ReviewsCarousel({ reviews }: { reviews: Review[] }) {
               className={`rounded-pill h-2.5 transition-all duration-300 ${
                 index === clampedActive
                   ? "bg-brand w-6"
-                  : "bg-brand/25 hover:bg-brand/45 w-2.5"
+                  : "bg-blue/25 hover:bg-blue/45 w-2.5"
               }`}
             />
           ))}

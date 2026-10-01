@@ -5,6 +5,8 @@ export const hero: {
   subtitle: string;
   badge: string;
   image: ContentImage;
+  /** Вертикальный кадр — только для телефонов */
+  imageMobile: ContentImage;
 } = {
   title: "Красота, здоровье и забота о вашем питомце",
   subtitle:
@@ -12,7 +14,11 @@ export const hero: {
   badge: "Более 10 лет заботимся о питомцах Камчатки",
   image: {
     src: "/images/hero/hero.jpg",
-    alt: "Пудель с розовой бабочкой после стрижки в зоосалоне BarberDog",
+    alt: "Персиковый пудель в барберской накидке в кресле зоосалона BarberDog",
+  },
+  imageMobile: {
+    src: "/images/hero/hero-mobile.jpg",
+    alt: "Персиковый пудель в барберской накидке в кресле зоосалона BarberDog",
   },
 };
 
@@ -86,6 +92,6 @@ export const ctaBanner: {
   text: "Запишите питомца в BarberDog и подарите ему заботу и комфорт.",
   image: {
     src: "/images/cta/cta-banner.jpg",
-    alt: "Белый померанский шпиц на розовом фоне",
+    alt: "Белый померанский шпиц на фоне красно-сине-белых полос барберского жезла",
   },
 };

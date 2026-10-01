@@ -38,7 +38,7 @@ export function PageHeader({
                     </span>
                   )}
                   {index < crumbs.length - 1 ? (
-                    <span aria-hidden className="text-brand/50">
+                    <span aria-hidden className="text-blue/50">
                       /
                     </span>
                   ) : null}

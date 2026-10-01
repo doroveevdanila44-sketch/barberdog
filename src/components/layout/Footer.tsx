@@ -25,7 +25,7 @@ function InfoItem({
 }) {
   return (
     <div className="flex items-start gap-3">
-      <span className="rounded-pill text-blue mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center bg-white shadow-[0_4px_12px_-8px_rgba(20,35,63,0.4)]">
+      <span className="rounded-pill text-blue mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center bg-white shadow-[0_4px_12px_-8px_rgba(17,19,23,0.4)]">
         {icon}
       </span>
       <div className="text-ink text-[15px] leading-snug">{children}</div>
@@ -99,7 +99,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   data-touch-hover=""
                   aria-label={`${messenger.label}: ${salon.phone.display}`}
-                  className="btn-motion rounded-pill text-blue flex h-11 w-11 items-center justify-center bg-white shadow-[0_6px_16px_-10px_rgba(20,35,63,0.5)]"
+                  className="btn-motion rounded-pill text-blue flex h-11 w-11 items-center justify-center bg-white shadow-[0_6px_16px_-10px_rgba(17,19,23,0.5)]"
                 >
                   <MessengerIcon className="h-5 w-5" />
                 </a>

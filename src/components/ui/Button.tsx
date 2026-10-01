@@ -8,8 +8,8 @@ type Size = "md" | "lg";
 
 const variants: Record<Variant, string> = {
   primary: "bg-brand text-white shadow-brand hover:bg-brand active:bg-brand",
-  outline: "border border-brand/45 bg-white text-brand hover:bg-white",
-  soft: "bg-brand-soft text-brand hover:bg-brand-soft",
+  outline: "border border-blue bg-white text-blue hover:bg-white",
+  soft: "bg-brand-soft text-blue hover:bg-brand-soft",
 };
 
 const sizes: Record<Size, string> = {

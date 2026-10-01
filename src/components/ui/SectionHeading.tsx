@@ -16,9 +16,9 @@ export function PawDivider({
       } ${className}`}
       aria-hidden
     >
-      <span className="rounded-pill bg-brand/45 h-px w-9" />
+      <span className="rounded-pill bg-blue/40 h-px w-9" />
       <IconPawSolid className="text-brand h-4 w-4" />
-      <span className="rounded-pill bg-brand/45 h-px w-9" />
+      <span className="rounded-pill bg-blue/40 h-px w-9" />
     </span>
   );
 }

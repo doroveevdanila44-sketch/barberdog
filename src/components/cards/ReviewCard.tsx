@@ -23,7 +23,7 @@ export function ReviewCard({ review }: { review: Review }) {
       <div className="mt-6 flex items-center gap-3">
         <span
           aria-hidden
-          className="rounded-pill bg-brand-soft font-display text-brand flex h-11 w-11 shrink-0 items-center justify-center text-lg font-bold"
+          className="rounded-pill bg-brand-soft font-display text-blue flex h-11 w-11 shrink-0 items-center justify-center text-lg font-bold"
         >
           {review.author.charAt(0)}
         </span>

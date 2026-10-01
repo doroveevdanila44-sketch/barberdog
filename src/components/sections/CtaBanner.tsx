@@ -6,13 +6,8 @@ import { IconPawSolid } from "@/components/icons";
 import { ctaBanner } from "@/content/home";
 import { imagePropsFill } from "@/lib/image";
 
-/**
- * Цвета сняты пипеткой с левого края cta-banner.jpg, включая его собственный
- * вертикальный перепад. Фон баннера повторяет фон фотографии, а край фото
- * растворяется маской — текстовая часть и фото читаются как один кадр.
- */
-const BANNER_BG =
-  "linear-gradient(180deg, #f5ced1 0%, #f5d3d6 60%, #f6dade 100%)";
+/** Чёрный фон баннера: фото с полосами жезла растворяется в нём маской. */
+const BANNER_BG = "#111317";
 
 export function CtaBanner() {
   return (
@@ -20,22 +15,22 @@ export function CtaBanner() {
       className="relative overflow-hidden"
       style={{ background: BANNER_BG }}
     >
-      {/* Декоративные лапки, как в макете */}
+      {/* Декоративные лапки */}
       <span
         aria-hidden
         className="pointer-events-none absolute inset-0 hidden md:block"
       >
-        <IconPawSolid className="absolute top-[18%] left-[44%] h-10 w-10 rotate-12 text-white/40" />
-        <IconPawSolid className="absolute top-[52%] left-[36%] h-14 w-14 -rotate-6 text-white/30" />
-        <IconPawSolid className="absolute top-[70%] left-[50%] h-9 w-9 rotate-[22deg] text-white/35" />
+        <IconPawSolid className="absolute top-[18%] left-[44%] h-10 w-10 rotate-12 text-white/20" />
+        <IconPawSolid className="absolute top-[52%] left-[36%] h-14 w-14 -rotate-6 text-white/15" />
+        <IconPawSolid className="absolute top-[70%] left-[50%] h-9 w-9 rotate-[22deg] text-white/20" />
       </span>
 
       <Container className="relative z-10">
         <Reveal className="max-w-[520px] pt-12 pb-4 md:py-16 lg:py-20">
-          <h2 className="text-[26px] leading-[1.2] sm:text-[32px] lg:text-[36px]">
+          <h2 className="text-[26px] leading-[1.2] text-white sm:text-[32px] lg:text-[36px]">
             {ctaBanner.title}
           </h2>
-          <p className="text-ink/80 mt-4 max-w-[420px] text-[15px] leading-relaxed sm:text-base">
+          <p className="mt-4 max-w-[420px] text-[15px] leading-relaxed text-white/80 sm:text-base">
             {ctaBanner.text}
           </p>
           <div className="mt-7">

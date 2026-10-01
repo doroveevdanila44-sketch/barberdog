@@ -9,7 +9,7 @@ export function IncludesList({ items }: { items: string[] }) {
     <ul className="grid gap-x-8 gap-y-3 sm:grid-cols-2">
       {items.map((item) => (
         <li key={item} className="flex items-start gap-3">
-          <span className="rounded-pill bg-brand-soft text-brand mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center">
+          <span className="rounded-pill bg-brand-soft text-blue mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center">
             <IconCheck className="h-3.5 w-3.5" strokeWidth={2.5} />
           </span>
           <span className="text-ink text-[15px] leading-relaxed">{item}</span>
